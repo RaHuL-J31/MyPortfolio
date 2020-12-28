@@ -280,7 +280,8 @@
           </div>
           <div class="column right">
             <div class="text">Message Me</div>
-            <form action="#" name="contact" netlify>
+
+            <!-- <form action="#" name="contact" netlify>
               <div class="fields">
                 <div class="field name">
                   <input type="text" placeholder="Name" required />
@@ -304,7 +305,26 @@
               <div class="button">
                 <button type="submit">Send Message</button>
               </div>
+            </form> -->
+
+            <!-- form for netlify -->
+            <form name="contact" method="POST" data-netlify="true">
+              <p class="field name">
+                <input type="text" name="name" placeholder="Name" />   
+              </p>
+              <p class="field Email">
+                 <input type="email" name="email" placeholder="Email"/>
+              </p>
+              <p class="field textarea">
+                <textarea name="message" placeholder="Message"></textarea>
+              </p>
+              <p class="button">
+                <button type="submit">Send</button>
+              </p>
             </form>
+            
+
+
           </div>
         </div>
       </div>
