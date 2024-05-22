@@ -1,425 +1,766 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./app.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
-        integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-
+  <body>
     <!-- scroll top -->
     <!-- navbar -->
     <i id="scrollTop" class="fa fa-chevron-up"></i>
     <header class="navbar text-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a class="flex title-font font-medium items-center text-900 mb-4 md:mb-0">
-
-                <span id="logo" class="text-xl">Rahul</span>
-            </a>
-            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <a href="#home" class="mr-5 hover:text-green-500">Home</a>
-                <a href="#about" class="mr-5 hover:text-green-500">About</a>
-                <a href="#project" class="mr-5 hover:text-green-500">Projects</a>
-                <a href="#skill" class="mr-5 hover:text-green-500">Skills</a>
-                <a href="#contact" class="mr-5 hover:text-green-500">Contact</a>
-                <button class="hover:text-green-500" id="darkbutton"><i class="fa fa-toggle-on"></i><span
-                        id="textDark">Light</span> </button>
-            </nav>
-
-        </div>
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <a
+          class="flex title-font font-medium items-center text-900 mb-4 md:mb-0"
+        >
+          <span id="logo" class="text-xl">Rahul</span>
+        </a>
+        <nav
+          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a href="#home" class="mr-5 hover:text-green-500">Home</a>
+          <a href="#about" class="mr-5 hover:text-green-500">About</a>
+          <a href="#project" class="mr-5 hover:text-green-500">Projects</a>
+          <a href="#skill" class="mr-5 hover:text-green-500">Skills</a>
+          <a href="#contact" class="mr-5 hover:text-green-500">Contact</a>
+          <button class="hover:text-green-500" id="darkbutton">
+            <i class="fa fa-toggle-on"></i><span id="textDark">Light</span>
+          </button>
+        </nav>
+      </div>
     </header>
-
-
 
     <!-- home -->
     <section class="text-600 body-font" id="home">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div>
+      <div
+        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+      >
+        <div>
+          <h1
+            class="title-font sm:text-4l text-3xl mb-4 font-medium text-900 text-center"
+          >
+            Hi I'm Rahul.
 
-                <h1 class="title-font sm:text-4l text-3xl mb-4 font-medium text-900 text-center">Hi I'm Rahul.
-
-                    <br class="hidden lg:inline-block">
-                    <h2 class="title-font sm:text-3l text-2xl mb-4 font-medium text-900 text-center">I am a Full Stack
-                        Developer</h2>
-                </h1>
-                <p class="mb-8 flex justify-center text-center">A highly skilled, competent, and diligent individual
-                    seeking an opportunity to solve real-world problems. Extremely motivated software engineer with
-                    knowledge about cutting-edge MERN Looking forward to providing a variety of software solutions where
-                    my technical skills will be fully harnessed.</p>
-                <div class="flex justify-center">
-
-
-                    <a class="inline-flex text-white-700 bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 hover:text-green-500 rounded text-lg"
-                        href="https://linkedin.com/in/RaHuL-J31" target="_blank"><i class="fa fa-linkedin"></i></a>
-                    <a class="ml-4 inline-flex text-white-700 bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 hover:text-green-500 rounded text-lg"
-                        href="https://github.com/RaHuL-J31" target="_blank"><i class="fa fa-github"></i></a>
-                    <a class="ml-4 inline-flex text-white-700 bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 hover:text-green-500 rounded text-lg"
-                        href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a class="ml-4 inline-flex text-white-700 bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 hover:text-green-500 rounded text-lg"
-                        href="https://www.instagram.com/rahulj_31/" target="_blank"><i class="fa fa-instagram"></i></a>
-
-                </div>
-            </div>
-
+            <br class="hidden lg:inline-block" />
+            <h2
+              class="title-font sm:text-3l text-2xl mb-4 font-medium text-900 text-center"
+            >
+              I am a Web Developer
+            </h2>
+          </h1>
+          <p class="mb-8 flex justify-center text-center">
+            A highly skilled, competent, and diligent individual seeking an
+            opportunity to solve real-world problems. Extremely motivated
+            software engineer with knowledge about cutting-edge MERN Looking
+            forward to providing a variety of software solutions where my
+            technical skills will be fully harnessed.
+          </p>
+          <div class="flex justify-center">
+            <a
+              class="inline-flex text-white-700 bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 hover:text-green-500 rounded text-lg"
+              href="https://linkedin.com/in/RaHuL-J31"
+              target="_blank"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a
+              class="ml-4 inline-flex text-white-700 bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 hover:text-green-500 rounded text-lg"
+              href="https://github.com/RaHuL-J31"
+              target="_blank"
+              ><i class="fa fa-github"></i
+            ></a>
+            <a
+              class="ml-4 inline-flex text-white-700 bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 hover:text-green-500 rounded text-lg"
+              href="https://www.facebook.com/"
+              target="_blank"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a
+              class="ml-4 inline-flex text-white-700 bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 hover:text-green-500 rounded text-lg"
+              href="https://www.instagram.com/rahulj_31/"
+              target="_blank"
+              ><i class="fa fa-instagram"></i
+            ></a>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- about -->
     <section class="text-600 body-font" id="about">
-        <div class="container px-5  mx-auto flex flex-col">
-            <div class="lg:w-4/6 mx-auto">
-
-                <div class="flex flex-col sm:flex-row mt-10">
-                    <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                        <div
-                            class="w-32 h-32 rounded-full inline-flex items-center justify-center bg-gray-200 text-400">
-                            <img id="profileImg" src="./assets/profile-image.png" alt="loading" srcset="" />
-                        </div>
-                        <div class="flex flex-col items-center text-center justify-center">
-                            <h2 class="font-medium title-font mt-4 text-900 text-lg">Rahul J</h2>
-                            <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-                            <p class="text-base"><i class="fa fa-graduation-cap"></i>NMAM Institute of Technology</p>
-                            <p class="text-base">Information Science</p>
-                            <p class="text-base">2015-2019</p>
-                        </div>
-                    </div>
-                    <div
-                        class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-green-500 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                        <p class="leading-relaxed text-lg mb-4 text-900"><i class="fa fa-laptop"></i>Work
-                            Experiance</p>
-                        <p class="leading-relaxed text-md mb-4 "><span class="text-900">Accenture</span> <br> I work as
-                            a Web Developer on a client Project. Responsibility includes maintenance of existing
-                            applications and the Development of new applications or functionality according to users
-                            requirements.These applications will be used by users across the world.
-                            I use the MERN stack for delivering my tasks. </p>
-
-                        <a class="text-green-500 inline-flex items-center cursor-pointer"
-                            href="./assets/Resume.pdf">Download CV
-
-                        </a>
-                    </div>
-                </div>
+      <div class="container px-5 mx-auto flex flex-col overflow-auto">
+        <div class="lg:w-4/6 mx-auto">
+          <div class="flex flex-col sm:flex-row mt-10">
+            <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+              <div
+                class="w-32 h-32 rounded-full inline-flex items-center justify-center bg-gray-200 text-400"
+              >
+                <img
+                  id="profileImg"
+                  src="./assets/profile-image.png"
+                  alt="loading"
+                  srcset=""
+                />
+              </div>
+              <div
+                class="flex flex-col items-center text-center justify-center"
+              >
+                <h2 class="font-medium title-font mt-4 text-900 text-lg">
+                  Rahul J
+                </h2>
+                <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+                <p class="text-base">
+                  <i class="fa fa-graduation-cap"></i>NMAM Institute of
+                  Technology
+                </p>
+                <p class="text-base">Information Science</p>
+                <p class="text-base">2015-2019</p>
+              </div>
             </div>
+            <div
+              class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-green-500 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left"
+            >
+              <p class="leading-relaxed text-lg mb-4 text-900">
+                <i class="fa fa-laptop"></i>Work Experiance
+              </p>
+
+              <p class="leading-relaxed text-md my-6">
+                <span class="text-900 text-green-500"
+                  >HashedIn by Deloitte
+                  <span class="text-xs text-gray-200"
+                    >2022 - Present</span
+                  > </span
+                ><br />
+                Developed a Pricing Analytics tool using React, implemented best
+                coding practices, and configured tools for enhanced code
+                quality. Collaborated with the design team for a user-friendly
+                interface. Streamlined application deployment with Docker and
+                AWS, set up a CI-CD pipeline, and achieved over 90% code
+                coverage via unit testing with Jest and the React testing
+                Library. Designed accessible signup forms for trials across
+                multiple SAAS products, improving lead generation for the
+                marketing team. Worked alongside backend developers to
+                seamlessly integrate REST APIs. Successfully implemented code
+                splits for improved performance and scalability, handled
+                production issues, and participated in A/B testing of new
+                features. As the Single Point of Contact for trials flow
+                feature, managed its development and execution, undertook tech
+                debt initiatives like migrating to Redux, and improved test
+                coverage for quality assurance.
+              </p>
+              <p class="leading-relaxed text-md mb-4">
+                <span class="text-900 text-green-500"
+                  >Accenture
+                  <span class="text-xs text-gray-200"
+                    >2019 June - 2022 May</span
+                  >
+                </span>
+                <br />
+                I designed, developed, and supported a React-based web
+                application for access management, achieving a 75% reduction in
+                manual work and significantly boosting efficiency. I also
+                created a dashboard that decreased support tickets by 45%. My
+                expertise includes the end-to-end development of REST APIs for
+                an e-commerce site’s product management module using NodeJS and
+                ExpressJS. I enhanced application security by implementing user
+                authentication with JWT and React UI components. In addition, I
+                provided training and mentorship on product knowledge and
+                business processes to team members. My proactive approach in
+                managing application monitoring, maintenance, and ticket
+                resolution in ServiceNow earned me recognition as a Business
+                Continuity Planning (BCP) resource within a year.
+              </p>
+
+              <a
+                class="text-green-500 inline-flex items-center cursor-pointer"
+                href="./assets/Resume.pdf"
+                >Download CV
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- project -->
 
     <section class="text-600 body-font" id="project">
-        <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-col">
-                <div class="h-1 bg-green-500 rounded overflow-hidden">
-                    <!-- <div class="w-24 h-full bg-indigo-500"></div> -->
-                </div>
-                <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-                    <h1 class="sm:w-2/5 text-900 font-medium title-font text-2xl mb-2 sm:mb-0">Projects</h1>
-                    <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Below are the some of project created by
-                        me. These projects showcase my technical skills. All the project source code and Live link can
-                        be found in my GitHub<a href="https://github.com/RaHuL-J31"><i
-                                class="pl-2 fa fa-github text-green-500 text-lg"></i></a></p>
-                </div>
-            </div>
-            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                    <div class="rounded-lg h-64 overflow-hidden">
-                        <img alt="content" class="object-cover object-center h-full w-full"
-                            src="./assets/PlayerHomepage2.PNG">
-                    </div>
-                    <h2 class="text-xl font-medium title-font text-900 mt-5">Waves Music Player</h2>
-                    <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
-                        cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-
-                    <a href="https://github.com/RaHuL-J31/Waves" target="_blank"
-                        class="text-green-500 inline-flex items-center mt-3 cursor-pointer">GitHub Link</a>
-                    <a href="https://ecstatic-stonebraker-ef80f8.netlify.app/" target="_blank"
-                        class="pl-3 text-green-500 inline-flex items-center mt-3 cursor-pointer">Demo</a>
-                </div>
-                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                    <div class="rounded-lg h-64 overflow-hidden">
-                        <img alt="content" class="object-cover object-center h-full w-full" src="./assets/ignite.png">
-                    </div>
-                    <h2 class="text-xl font-medium title-font text-900 mt-5">Ignite</h2>
-                    <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
-                        cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-
-                    <a href="https://github.com/RaHuL-J31/Ignite" target="_blank"
-                        class="text-green-500 inline-flex items-center mt-3 cursor-pointer">GitHub Link</a>
-                    <a href="https://competent-wright-a1132b.netlify.app/" target="_blank"
-                        class="pl-3 text-green-500 inline-flex items-center mt-3 cursor-pointer">Demo</a>
-                </div>
-
-                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                    <div class="rounded-lg h-64 overflow-hidden">
-                        <img alt="content" class="object-cover object-center h-full w-full" src="./assets/GPT3.PNG">
-                    </div>
-                    <h2 class="text-xl font-medium title-font text-900 mt-5">GPT3 Modern Website</h2>
-                    <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
-                        cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-                    <a href="https://github.com/RaHuL-J31/GPT3_Modern_Website" target="_blank"
-                        class="text-green-500 inline-flex items-center mt-3 cursor-pointer">GitHub Link</a>
-                    <a href="https://gpt3landingpagedemo.netlify.app/" target="_blank"
-                        class="pl-3 text-green-500 inline-flex items-center mt-3 cursor-pointer">Demo</a>
-                </div>
-                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                    <div class="rounded-lg h-64 overflow-hidden">
-                        <img alt="content" class="object-cover object-center h-full w-full"
-                            src="./assets/Photon-Proj.PNG">
-                    </div>
-                    <h2 class="text-xl font-medium title-font text-900 mt-5">Photon</h2>
-                    <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
-                        cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-
-                    <a href="https://github.com/RaHuL-J31/Photon" target="_blank"
-                        class="text-green-500 inline-flex items-center mt-3 cursor-pointer">GitHub Link</a>
-                    <a href="https://trusting-heyrovsky-5d166f.netlify.app/" target="_blank"
-                        class="pl-3 text-green-500 inline-flex items-center mt-3 cursor-pointer">Demo</a>
-                </div>
-                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                    <div class="rounded-lg h-64 overflow-hidden">
-                        <img alt="content" class="object-cover object-center h-full w-full" src="./assets/Todo.PNG">
-                    </div>
-                    <h2 class="text-xl font-medium title-font text-900 mt-5">ToDo List</h2>
-                    <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
-                        cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-                    <a href="https://github.com/RaHuL-J31/ToDo-Application" target="_blank"
-                        class="text-green-500 inline-flex items-center mt-3 cursor-pointer">GitHub Link</a>
-                    <a href="https://gifted-jang-94a2ec.netlify.app" target="_blank"
-                        class="pl-3 text-green-500 inline-flex items-center mt-3 cursor-pointer">Demo</a>
-                </div>
-                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                    <div class="rounded-lg h-64 overflow-hidden">
-                        <img alt="content" class="object-cover object-center h-full w-full"
-                            src="./assets/CaptureFull.PNG">
-                    </div>
-                    <h2 class="text-xl font-medium title-font text-900 mt-5">Capture</h2>
-                    <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
-                        cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-
-                    <a href="https://github.com/RaHuL-J31/Capture" target="_blank"
-                        class="text-green-500 inline-flex items-center mt-3 cursor-pointer">GitHub Link</a>
-                    <a href="https://agitated-pike-293e54.netlify.app/" target="_blank"
-                        class="pl-3 text-green-500 inline-flex items-center mt-3 cursor-pointer">Demo</a>
-                </div>
-            </div>
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col">
+          <div class="h-1 bg-green-500 rounded overflow-hidden">
+            <!-- <div class="w-24 h-full bg-indigo-500"></div> -->
+          </div>
+          <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+            <h1
+              class="sm:w-2/5 text-900 font-medium title-font text-2xl mb-2 sm:mb-0"
+            >
+              Projects
+            </h1>
+            <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
+              Below are the some of project created by me. These projects
+              showcase my technical skills. All the project source code and Live
+              link can be found in my GitHub<a
+                href="https://github.com/RaHuL-J31"
+                ><i class="pl-2 fa fa-github text-green-500 text-lg"></i
+              ></a>
+            </p>
+          </div>
         </div>
+        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="./assets/PlayerHomepage2.PNG"
+              />
+            </div>
+            <h2 class="text-xl font-medium title-font text-900 mt-5">
+              Waves Music Player
+            </h2>
+            <p class="text-base leading-relaxed mt-2">
+              Music Player created with 6 audio clip of Lo-Fi music. With
+              functionality of play pause and skip.
+            </p>
+
+            <a
+              href="https://github.com/RaHuL-J31/Waves"
+              target="_blank"
+              class="text-green-500 inline-flex items-center mt-3 cursor-pointer"
+              >GitHub Link</a
+            >
+            <a
+              href="https://ecstatic-stonebraker-ef80f8.netlify.app/"
+              target="_blank"
+              class="pl-3 text-green-500 inline-flex items-center mt-3 cursor-pointer"
+              >Demo</a
+            >
+          </div>
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="./assets/ignite.png"
+              />
+            </div>
+            <h2 class="text-xl font-medium title-font text-900 mt-5">Ignite</h2>
+            <p class="text-base leading-relaxed mt-2">
+              Same as a IMDB website this is a webpage for Games details.
+              Created with axios and redux.
+            </p>
+
+            <a
+              href="https://github.com/RaHuL-J31/Ignite"
+              target="_blank"
+              class="text-green-500 inline-flex items-center mt-3 cursor-pointer"
+              >GitHub Link</a
+            >
+            <a
+              href="https://competent-wright-a1132b.netlify.app/"
+              target="_blank"
+              class="pl-3 text-green-500 inline-flex items-center mt-3 cursor-pointer"
+              >Demo</a
+            >
+          </div>
+
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="./assets/GPT3.PNG"
+              />
+            </div>
+            <h2 class="text-xl font-medium title-font text-900 mt-5">
+              GPT3 Modern Website
+            </h2>
+            <p class="text-base leading-relaxed mt-2">
+              Modern landing page template for web 3 companies. Created with
+              styled components and react
+            </p>
+            <a
+              href="https://github.com/RaHuL-J31/GPT3_Modern_Website"
+              target="_blank"
+              class="text-green-500 inline-flex items-center mt-3 cursor-pointer"
+              >GitHub Link</a
+            >
+            <a
+              href="https://gpt3landingpagedemo.netlify.app/"
+              target="_blank"
+              class="pl-3 text-green-500 inline-flex items-center mt-3 cursor-pointer"
+              >Demo</a
+            >
+          </div>
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="./assets/Photon-Proj.PNG"
+              />
+            </div>
+            <h2 class="text-xl font-medium title-font text-900 mt-5">Photon</h2>
+            <p class="text-base leading-relaxed mt-2">
+              Just a simple photo librabry created using shutterstock open Api.
+            </p>
+
+            <a
+              href="https://github.com/RaHuL-J31/Photon"
+              target="_blank"
+              class="text-green-500 inline-flex items-center mt-3 cursor-pointer"
+              >GitHub Link</a
+            >
+            <a
+              href="https://trusting-heyrovsky-5d166f.netlify.app/"
+              target="_blank"
+              class="pl-3 text-green-500 inline-flex items-center mt-3 cursor-pointer"
+              >Demo</a
+            >
+          </div>
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="./assets/Todo.PNG"
+              />
+            </div>
+            <h2 class="text-xl font-medium title-font text-900 mt-5">
+              ToDo List
+            </h2>
+            <p class="text-base leading-relaxed mt-2">Simple todo list.</p>
+            <a
+              href="https://github.com/RaHuL-J31/ToDo-Application"
+              target="_blank"
+              class="text-green-500 inline-flex items-center mt-3 cursor-pointer"
+              >GitHub Link</a
+            >
+            <a
+              href="https://gifted-jang-94a2ec.netlify.app"
+              target="_blank"
+              class="pl-3 text-green-500 inline-flex items-center mt-3 cursor-pointer"
+              >Demo</a
+            >
+          </div>
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="./assets/CaptureFull.PNG"
+              />
+            </div>
+            <h2 class="text-xl font-medium title-font text-900 mt-5">
+              Capture
+            </h2>
+            <p class="text-base leading-relaxed mt-2">
+              Created with vanilla JavaScript.
+            </p>
+
+            <a
+              href="https://github.com/RaHuL-J31/Capture"
+              target="_blank"
+              class="text-green-500 inline-flex items-center mt-3 cursor-pointer"
+              >GitHub Link</a
+            >
+            <a
+              href="https://agitated-pike-293e54.netlify.app/"
+              target="_blank"
+              class="pl-3 text-green-500 inline-flex items-center mt-3 cursor-pointer"
+              >Demo</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
     <!-- skills -->
 
     <section class="text-600 body-font text-center" id="skill">
-        <div class="container px-5 py-15 mx-auto">
-            <div class="h-1 bg-green-500 rounded overflow-hidden">
-                <!-- <div class="w-24 h-full bg-indigo-500"></div> -->
-            </div>
-            <div class="text-center mb-17">
-                <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-900 mb-4 my-4">Skills</h1>
-                <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic
-                    four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.
-                </p>
-            </div>
-            <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-                <div class="p-2 sm:w-1/2 w-full">
-                    <div class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="3" class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                            <path d="M22 4L12 14.01l-3-3"></path>
-                        </svg>
-                        <span class="title-font font-medium text-green-500">React JS</span>
-                    </div>
-                </div>
-                <div class="p-2 sm:w-1/2 w-full">
-                    <div class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="3" class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                            <path d="M22 4L12 14.01l-3-3"></path>
-                        </svg>
-                        <span class="title-font font-medium text-green-500">JavaScript</span>
-                    </div>
-                </div>
-                <div class="p-2 sm:w-1/2 w-full">
-                    <div class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="3" class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                            <path d="M22 4L12 14.01l-3-3"></path>
-                        </svg>
-                        <span class="title-font font-medium text-green-500">HTML</span>
-                    </div>
-                </div>
-                <div class="p-2 sm:w-1/2 w-full">
-                    <div class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="3" class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                            <path d="M22 4L12 14.01l-3-3"></path>
-                        </svg>
-                        <span class="title-font font-medium text-green-500">CSS</span>
-                    </div>
-                </div>
-                <div class="p-2 sm:w-1/2 w-full">
-                    <div class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="3" class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                            <path d="M22 4L12 14.01l-3-3"></path>
-                        </svg>
-                        <span class="title-font font-medium text-green-500">.NET MVC</span>
-                    </div>
-                </div>
-                <div class="p-2 sm:w-1/2 w-full">
-                    <div class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="3" class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                            <path d="M22 4L12 14.01l-3-3"></path>
-                        </svg>
-                        <span class="title-font font-medium text-green-500">SQL</span>
-                    </div>
-                </div>
-                <div class="p-2 sm:w-1/2 w-full">
-                    <div class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="3" class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                            <path d="M22 4L12 14.01l-3-3"></path>
-                        </svg>
-                        <span class="title-font font-medium text-green-500">Python</span>
-                    </div>
-                </div>
-                <div class="p-2 sm:w-1/2 w-full">
-                    <div class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="3" class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                            <path d="M22 4L12 14.01l-3-3"></path>
-                        </svg>
-                        <span class="title-font font-medium text-green-500">C#</span>
-                    </div>
-                </div>
-                <div class="p-2 sm:w-1/2 w-full">
-                    <div class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="3" class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                            <path d="M22 4L12 14.01l-3-3"></path>
-                        </svg>
-                        <span class="title-font font-medium text-green-500">Bootstrap</span>
-                    </div>
-                </div>
-                <div class="p-2 sm:w-1/2 w-full">
-                    <div class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="3" class="text-green-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                            <path d="M22 4L12 14.01l-3-3"></path>
-                        </svg>
-                        <span class="title-font font-medium text-green-500">JQuery</span>
-                    </div>
-                </div>
-            </div>
-
+      <div class="container px-5 py-15 mx-auto">
+        <div class="h-1 bg-green-500 rounded overflow-hidden">
+          <!-- <div class="w-24 h-full bg-indigo-500"></div> -->
         </div>
+        <div class="text-center mb-17">
+          <h1
+            class="sm:text-3xl text-2xl font-medium text-center title-font text-900 mb-4 my-4"
+          >
+            Skills
+          </h1>
+          <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+            Below are some of my skills which I have experiance in and worked
+            upon during my journey as a web developer.
+          </p>
+        </div>
+        <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+          <div class="p-2 sm:w-1/2 w-full">
+            <div
+              class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-green-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium text-green-500"
+                >React JS</span
+              >
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div
+              class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-green-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium text-green-500"
+                >JavaScript</span
+              >
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div
+              class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-green-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium text-green-500">HTML</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div
+              class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-green-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium text-green-500">CSS</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div
+              class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-green-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium text-green-500">Git</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div
+              class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-green-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium text-green-500">Node</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div
+              class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-green-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium text-green-500">Next</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div
+              class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-green-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium text-green-500">Agile</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div
+              class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-green-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium text-green-500">AWS</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div
+              class="bg-gray-100 opacity-80 rounded flex p-4 h-full items-center"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-green-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium text-green-500">Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- contact -->
     <section class="text-600 body-font" id="contact">
-        <div class="container px-2 py-20 mx-auto">
-            <div class="h-1 bg-green-500 rounded overflow-hidden">
-                <!-- <div class="w-24 h-full bg-indigo-500"></div> -->
-            </div>
-            <div class="flex flex-col text-center w-full mb-12">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-900 my-4">Contact Me</h1>
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn
-                    asymmetrical gentrify.</p>
-            </div>
-            <form name="contact" netlify>
-                <div class="lg:w-1/2 md:w-2/3 mx-auto">
-                    <div class="flex flex-wrap -m-2">
-                        <div class="p-2 w-1/2">
-                            <div class="relative">
-                                <label for="name" class="leading-7 text-sm text-600">Name</label>
-                                <input type="text" id="name" name="name"
-                                    class="w-full bg-gray-100 bg-opacity-80 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                            </div>
-                        </div>
-                        <div class="p-2 w-1/2">
-                            <div class="relative">
-                                <label for="email" class="leading-7 text-sm text-600">Email</label>
-                                <input type="email" id="email" name="email"
-                                    class="w-full bg-gray-100 bg-opacity-80 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                            </div>
-                        </div>
-                        <div class="p-2 w-full">
-                            <div class="relative">
-                                <label for="message" class="leading-7 text-sm text-600">Message</label>
-                                <textarea id="message" name="message"
-                                    class="w-full bg-gray-100 bg-opacity-80 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-                            </div>
-                        </div>
-                        <div class="p-2 w-full">
-                            <button type="submit"
-                                class="flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-gray-600 hover:text-green-500 rounded text-lg">Send</button>
-                        </div>
-
-                    </div>
-                </div>
-            </form>
+      <div class="container px-2 py-20 mx-auto">
+        <div class="h-1 bg-green-500 rounded overflow-hidden">
+          <!-- <div class="w-24 h-full bg-indigo-500"></div> -->
         </div>
+        <div class="flex flex-col text-center w-full mb-12">
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-900 my-4"
+          >
+            Contact Me
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+            If you want to hire me or have any questions please feel free to
+            drop in your details. Ill reach out to you shortly.
+          </p>
+        </div>
+        <form name="contact" netlify>
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="name" class="leading-7 text-sm text-600"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="w-full bg-gray-100 bg-opacity-80 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="email" class="leading-7 text-sm text-600"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full bg-gray-100 bg-opacity-80 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <div class="relative">
+                  <label for="message" class="leading-7 text-sm text-600"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="w-full bg-gray-100 bg-opacity-80 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <button
+                  type="submit"
+                  class="flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-gray-600 hover:text-green-500 rounded text-lg"
+                >
+                  Send
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </section>
     <!-- footer -->
 
     <footer class="text-gray-600 body-font">
-        <div class="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
-
-            <p class="text-sm text-gray-500 sm:ml-0 sm:pl-4  sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 No
-                Copyright feel free to use my template. Share it with me on my social handles
-
-            </p>
-            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                <a class="text-gray-500">
-                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        class="w-5 h-5" viewBox="0 0 24 24">
-                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                    </svg>
-                </a>
-                <a class="ml-3 text-gray-500">
-                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        class="w-5 h-5" viewBox="0 0 24 24">
-                        <path
-                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                        </path>
-                    </svg>
-                </a>
-                <a class="ml-3 text-gray-500">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                    </svg>
-                </a>
-                <a class="ml-3 text-gray-500">
-                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                        <path stroke="none"
-                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
-                        </path>
-                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                    </svg>
-                </a>
-            </span>
-        </div>
+      <div
+        class="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <p
+          class="text-sm text-gray-500 sm:ml-0 sm:pl-4 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+        >
+          © 2021 No Copyright feel free to use my template. Share it with me on
+          my social handles
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+        >
+          <a class="text-gray-500">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+              ></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
     </footer>
     <script src="./app.js"></script>
-</body>
-
+  </body>
 </html>
